@@ -2,15 +2,24 @@
   background-color: $third-accent;
   padding-top: 125px;
   padding-bottom: 39px;
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
   &__text {
     color: $secondary-accent;
     font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-family: Titan One;
+      font-size: 26px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
   }
 
   &__title {
@@ -23,6 +32,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-bottom: 26px;
   }
 
   &__second-text {
@@ -31,6 +41,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+    margin-bottom: 47px;
   }
 
   &__third-text {
@@ -40,5 +51,22 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+    margin-bottom: 47px;
   }
+}
+
+.about__button {
+  background-color: #ffffff;
+  color: $main-accent;
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  border-color: transparent;
+  font-family: DM Sans;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
 }
