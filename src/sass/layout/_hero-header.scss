@@ -7,9 +7,15 @@
   align-items: center;
 }
 
+.navigation {
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+
 .page-header__logo {
   display: inline-block;
-  padding-top: 6px;
 }
 
 .mob-menu {
@@ -23,6 +29,10 @@
 .hero {
   padding-top: 135px;
   padding-bottom: 160px;
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 168px;
+  }
 }
 
 .hero--background {
@@ -33,12 +43,26 @@
   position: absolute;
   top: 83px;
   right: 0;
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    right: 137px;
+  }
 }
 
 .wrap-ice {
   position: absolute;
   top: 92px;
   right: 32px;
+  @media screen and (min-width: 768px) {
+    top: 63px;
+    right: 247px;
+  }
+}
+
+.wrap-girl {
+  position: absolute;
+  top: 266px;
+  right: 34px;
 }
 
 .hero__title {
@@ -52,11 +76,20 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    max-width: 162px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
 
   &--size {
     font-size: 48px;
     line-height: 0.96;
     color: $main-accent;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
   }
 }
 

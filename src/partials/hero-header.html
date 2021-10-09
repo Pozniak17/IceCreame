@@ -20,12 +20,33 @@
 <section class="hero hero--background">
   <div class="container">
     <picture>
-      <source srcset="./images/mobile/Ellipse-1x.png 1x, ./images/mobile/Ellipse-2x.png 2x" />
+      <source
+        srcset="./images/tablet/Ellipse-1x.png 1x, ./images/tablet/Ellipse-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/Ellipse-1x.png 1x, ./images/mobile/Ellipse-2x.png 2x"
+        media="(max-width: 767px)"
+      />
       <img class="wrap-ellipse" src="./images/mobile/Ellipse-1x.png" alt="Мороженое" />
     </picture>
     <picture>
-      <source srcset="./images/mobile/ice-cream-1x.png 1x, ./images/mobile/ice-cream-2x.png 2x" />
+      <source
+        srcset="./images/tablet/ice-cream-1x.png 1x, ./images/tablet/ice-cream-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/ice-cream-1x.png 1x, ./images/mobile/ice-cream-2x.png 2x"
+        media="(max-width: 767px)"
+      />
       <img class="wrap-ice" src="./images/mobile/ice-cream-1x.png" alt="Мороженое" />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/tablet/girl-1x-min.png 1x, ./images/tablet/girl-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img class="wrap-girl" src="./images/tablet/girl-1x-min.png" alt="Девушка ест мороженое" />
     </picture>
     <h1 class="hero__title">ice cream made with <span class="hero__title--size">passion</span></h1>
     <ul class="button">
