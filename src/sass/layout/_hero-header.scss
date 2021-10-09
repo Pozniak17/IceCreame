@@ -60,9 +60,13 @@
 }
 
 .wrap-girl {
+  display: none;
   position: absolute;
   top: 266px;
   right: 34px;
+  @media screen and (min-width: 768px) {
+    display: unset;
+  }
 }
 
 .hero__title {
