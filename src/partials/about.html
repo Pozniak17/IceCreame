@@ -2,7 +2,19 @@
   <div class="container">
     <p class="about__text">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
-    <img src="" alt="коровка" width="280" height="279" />
+    <picture>
+      <source
+        srcset="./images/mobile/about1-1x.png 1x, /images/mobile/about1-2x.png 2x"
+        media="(min-width:320px)"
+      />
+      <source
+        srcset="./images/tablet/about1-1x.png 1x, /images/tablet/about1-2x.png 2x"
+        media="(min-width:768px)"
+      />
+
+      <img src="./images/mobile/about1-1x.png" alt="свежее молоко и красивая коровка" />
+    </picture>
+    <!-- <img src="" alt="коровка" width="280" height="279" /> -->
 
     <p class="about__second-text">
       Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
