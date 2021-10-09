@@ -1,13 +1,48 @@
+.page-header--background {
+  background-color: #ffb8ca;
+}
+
+.container--flex {
+  display: flex;
+  align-items: center;
+}
+
 .page-header__logo {
   display: inline-block;
   padding-top: 6px;
+}
+
+.mob-menu {
+  padding: 0;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.hero {
+  padding-top: 135px;
+  padding-bottom: 160px;
 }
 
 .hero--background {
   background-color: #ffb8ca;
 }
 
+.wrap-ellipse {
+  position: absolute;
+  top: 83px;
+  right: 0;
+}
+
+.wrap-ice {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+}
+
 .hero__title {
+  position: relative;
   margin-bottom: 20px;
   max-width: 225px;
   font-family: Titan One;
@@ -25,25 +60,40 @@
   }
 }
 
-.hero__btn {
-  padding: 0;
+.button {
+  position: relative;
+  display: flex;
 
-  min-height: 24px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.button__link {
+  display: inline-flex;
+  padding: 7px 13px;
+  font-family: DM Sans;
   font-size: 8px;
   line-height: 1.25;
-  border-style: unset;
   border-radius: 20px;
 
-  &--color-pink {
-    min-width: 62px;
-    margin-right: 8px;
+  &--pink {
     color: #ffffff;
     background-color: $main-accent;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
 
-  &--color-white {
-    min-width: 82px;
+  &--white {
     color: $main-accent;
     background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }

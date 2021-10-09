@@ -1,8 +1,12 @@
-<header class="page-header">
+<header class="page-header page-header--background">
   <div class="container container--flex">
     <nav class="navigation">
       <a class="page-header__logo" href="#">
-        <img src="#" alt="Логотип" />
+        <img
+          srcset="./images/mobile/logo-1x.png 1x, ./images/mobile/logo-2x.png 2x"
+          src="./images/mobile/logo-1x.png"
+          alt="Логотип"
+        />
       </a>
     </nav>
     <button class="mob-menu" type="button">
@@ -12,15 +16,25 @@
     </button>
   </div>
 </header>
-
+<!-- Секция Герой -->
 <section class="hero hero--background">
   <div class="container">
+    <picture>
+      <source srcset="./images/mobile/Ellipse-1x.png 1x, ./images/mobile/Ellipse-2x.png 2x" />
+      <img class="wrap-ellipse" src="./images/mobile/Ellipse-1x.png" alt="Мороженое" />
+    </picture>
+    <picture>
+      <source srcset="./images/mobile/ice-cream-1x.png 1x, ./images/mobile/ice-cream-2x.png 2x" />
+      <img class="wrap-ice" src="./images/mobile/ice-cream-1x.png" alt="Мороженое" />
+    </picture>
     <h1 class="hero__title">ice cream made with <span class="hero__title--size">passion</span></h1>
-    <a class="hero__link" href="#">
-      <button class="hero__btn hero__btn--color-pink" type="button">Products</button>
-    </a>
-    <a class="hero__link" href="#">
-      <button class="hero__btn hero__btn--color-white" type="button">How it’s made?</button>
-    </a>
+    <ul class="button">
+      <li class="button__item">
+        <a class="button__link button__link--pink" href="#products">Products</a>
+      </li>
+      <li class="button__item">
+        <a class="button__link button__link--white" href="#about">How it’s made?</a>
+      </li>
+    </ul>
   </div>
 </section>
