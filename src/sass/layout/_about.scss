@@ -68,7 +68,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 }
 
@@ -87,3 +87,12 @@
   align-items: center;
   text-align: center;
 }
+
+.about__text-wrapper {
+  background-image: url(../images/mobile/about-bg-1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+// Треба контейнер перекинути на спільний контейнер
