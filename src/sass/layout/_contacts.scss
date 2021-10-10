@@ -1,22 +1,24 @@
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .contacts {
   background: linear-gradient(to bottom, #fff 8.5%, $third-accent 8.5%, $third-accent 100%);
-  padding: 50px 30px;
+  padding: 30px 0;
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #fff 15%, $third-accent 15%, $third-accent 100%);
+  }
+  @media screen and (min-width: 1280px) {
+    background: linear-gradient(to bottom, #fff 17%, $third-accent 17%, $third-accent 100%);
+  }
 }
 .contacts__list {
-  padding-bottom: 54px;
+  margin-bottom: 54px;
+  padding: 0 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
+  }
 }
 
 .contacts__item {
@@ -25,6 +27,12 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
 .contacts__category {
   font-family: DM Sans;
@@ -41,6 +49,12 @@
   padding: 0 25px;
   display: inline-block;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  &-foodtruck {
+    background-color: #c2e297;
+  }
 }
 
 .contacts__city {
@@ -52,6 +66,12 @@
   margin-bottom: 10px;
   line-height: 1.86;
   color: $primary-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .contacts__description {
   display: inline-block;
@@ -65,6 +85,14 @@
   letter-spacing: 0.04em;
   color: $text-color;
   line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 
 .contacts__work-schedule {
@@ -76,6 +104,12 @@
   font-size: 12px;
   line-height: 1.86;
   border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .contacts__weekdays {
   margin-bottom: 10px;
@@ -95,6 +129,13 @@
   line-height: 1.5;
 
   color: #907e82;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .contacts__buttons {
   display: flex;
@@ -102,12 +143,14 @@
 
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   display: flex;
   align-items: center;
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 .contacts__location {
   padding: 12px 20px;
@@ -117,6 +160,11 @@
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+    margin-left: auto;
+  }
 }
 .contacts__franchise {
   padding: 12px 32px;
@@ -125,4 +173,5 @@
   color: $main-accent;
   border: none;
   cursor: pointer;
+  margin-right: auto;
 }
