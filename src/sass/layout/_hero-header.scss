@@ -25,7 +25,14 @@
   margin-left: auto;
   width: 30px;
   height: 30px;
+  color: $main-accent;
+  background-color: transparent;
+  border-style: unset;
   cursor: pointer;
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .button-buy {
@@ -57,13 +64,6 @@
   padding-top: 135px;
   padding-bottom: 160px;
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url(../images/tablet/number16-2x.png);
-  // }
-
   @media screen and (min-width: 768px) {
     padding-top: 15px;
     padding-bottom: 168px;
@@ -84,7 +84,7 @@
 
   @media screen and (min-width: 768px) {
     top: 31px;
-    right: 140px;
+    right: 143px;
   }
 }
 
@@ -125,25 +125,47 @@
   position: absolute;
   top: 292px;
   left: 154px;
+  display: none;
   width: 114px;
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.5;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    display: unset;
+  }
 }
 
 .button-slider {
   position: absolute;
   top: 347px;
   left: 154px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 18px;
   height: 18px;
   padding: 0;
+  color: $main-accent;
   border-style: unset;
+  background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .hero__title {
