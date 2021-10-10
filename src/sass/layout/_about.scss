@@ -116,6 +116,9 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -150,11 +153,17 @@
     width: 340px;
     padding: 0;
   }
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
 }
 
 .about__image-wrapper {
   @media screen and (min-width: 768px) {
     margin-right: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
   }
 }
 // Треба контейнер перекинути на спільний контейнер
