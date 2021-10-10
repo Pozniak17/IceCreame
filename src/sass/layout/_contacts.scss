@@ -1,0 +1,128 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.contacts {
+  background: linear-gradient(to bottom, #fff 8.5%, $third-accent 8.5%, $third-accent 100%);
+  padding: 50px 30px;
+}
+.contacts__list {
+  padding-bottom: 54px;
+}
+
+.contacts__item {
+  padding: 45px 20px;
+  background-color: #fff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
+.contacts__category {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: #f0d1a5;
+  border-radius: 4px;
+  padding: 0 25px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.contacts__city {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  line-height: 1.86;
+  color: $primary-color;
+}
+.contacts__description {
+  display: inline-block;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 25px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+.contacts__work-schedule {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__weekdays {
+  margin-bottom: 10px;
+}
+.contacts__work-day {
+  color: $primary-color;
+}
+.contacts__work-time {
+  color: $secondary-accent;
+}
+.contacts__tel,
+.contacts__mail {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
+}
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.contacts__location {
+  padding: 12px 20px;
+  background: $main-accent;
+  border-radius: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+.contacts__franchise {
+  padding: 12px 32px;
+  background: #fff;
+  border-radius: 22px;
+  color: $main-accent;
+  border: none;
+  cursor: pointer;
+}
