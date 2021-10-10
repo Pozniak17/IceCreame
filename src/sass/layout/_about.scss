@@ -1,7 +1,3 @@
-.about__container {
-  padding-left: 50px;
-  padding-right: 50px;
-}
 .about {
   background-color: $third-accent;
   padding-top: 125px;
@@ -57,9 +53,6 @@
   // Готово к этому моменту
 
   &__second-text {
-    display: block;
-    // width: 220px;
-    // height: 79px;
     color: $primary-color;
     font-family: DM Sans;
     font-weight: 500;
@@ -86,8 +79,6 @@
   }
 
   &__third-text {
-    // width: 220px;
-    // height: 150px;
     color: $text-color;
     font-family: DM Sans;
     font-style: normal;
@@ -132,7 +123,6 @@
   background-image: url(../images/mobile/about-bg-1x.png);
   background-repeat: no-repeat;
   background-position: 0 766px;
-  width: 100%;
   @media screen and (min-width: 768px) {
     background-image: none;
   }
@@ -145,8 +135,11 @@
 }
 
 .about__text-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 768px) {
-    width: 320px;
+    width: 340px;
+    padding: 0;
   }
 }
 
