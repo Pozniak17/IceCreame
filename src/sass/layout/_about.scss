@@ -52,16 +52,15 @@
   // Готово к этому моменту
 
   &__second-text {
-    @media scree and (max-width: 767px) {
-      color: $primary-color;
-      font-family: DM Sans;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.62;
+    color: $primary-color;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
 
-      margin-top: 46px;
-      margin-bottom: 47px;
-    }
+    margin-top: 46px;
+    margin-bottom: 47px;
+
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.76;
@@ -79,7 +78,6 @@
   &__third-text {
     color: $text-color;
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
@@ -149,11 +147,13 @@
 .about__text-wrapper {
   padding-left: 30px;
   padding-right: 30px;
+
   @media screen and (min-width: 768px) {
     width: 340px;
     padding: 0;
   }
   @media screen and (min-width: 1280px) {
+    width: 463px;
     padding: 0;
   }
 }
