@@ -13,7 +13,7 @@
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    padding-bottom: 66px;
+    padding-bottom: 146px;
   }
   &__text {
     color: $secondary-accent;
@@ -47,7 +47,7 @@
     margin-bottom: 26px;
     @media screen and (min-width: 768px) {
       font-size: 48px;
-      margin-bottom: 50px;
+      margin-bottom: 0;
     }
     @media screen and (min-width: 1280px) {
       font-size: 58px;
@@ -65,8 +65,24 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
+
     margin-top: 46px;
     margin-bottom: 47px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.76;
+
+      margin-top: 100px;
+      margin-bottom: 49px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+
+      margin-top: 106px;
+      margin-top: 35px;
+    }
   }
 
   &__third-text {
@@ -78,7 +94,21 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 45px;
   }
 }
 
@@ -102,6 +132,27 @@
   background-image: url(../images/mobile/about-bg-1x.png);
   background-repeat: no-repeat;
   background-position: 0 766px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
 }
 
+.about__general-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__text-wrapper {
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
+}
+
+.about__image-wrapper {
+  @media screen and (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
 // Треба контейнер перекинути на спільний контейнер
