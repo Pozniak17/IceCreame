@@ -38,7 +38,9 @@
 .button-buy {
   z-index: 1;
   display: none;
-  padding: 12px 41px;
+  align-items: baseline;
+  justify-content: center;
+  padding: 12px 37px;
   margin-left: 30px;
   font-family: DM Sans;
   font-weight: 700;
@@ -50,13 +52,18 @@
   border-radius: 22px;
   transition: background-color 250ms linear;
 
-  @media screen and (min-width: 768px) {
-    display: unset;
+  &__icon {
+    margin-left: 12px;
+    fill: currentColor;
   }
 
   &:hover,
   &:focus {
     background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -84,7 +91,7 @@
 
   @media screen and (min-width: 768px) {
     top: 31px;
-    right: 143px;
+    right: 142px;
   }
 }
 
