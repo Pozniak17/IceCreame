@@ -173,6 +173,10 @@
     margin-left: auto;
   }
 }
+
+.icon-loc {
+  fill: #fff;
+}
 .contacts__franchise {
   padding: 12px 32px;
   background: #fff;
@@ -188,6 +192,9 @@
   &:focus {
     background: #ecebeb;
   }
+}
+.icon-fr {
+  fill: $main-accent;
 }
 .locations__backdrop,
 .franchise__backdrop {
