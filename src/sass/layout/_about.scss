@@ -58,8 +58,8 @@
 
   &__second-text {
     display: block;
-    width: 220px;
-    height: 79px;
+    // width: 220px;
+    // height: 79px;
     color: $primary-color;
     font-family: DM Sans;
     font-weight: 500;
@@ -70,8 +70,8 @@
   }
 
   &__third-text {
-    width: 220px;
-    height: 150px;
+    // width: 220px;
+    // height: 150px;
     color: $text-color;
     font-family: DM Sans;
     font-style: normal;
@@ -88,7 +88,7 @@
   width: 176px;
   height: 44px;
   border-radius: 22px;
-  border-color: transparent;
+  border: none;
   font-family: DM Sans;
 
   font-weight: 700;
@@ -102,7 +102,6 @@
   background-image: url(../images/mobile/about-bg-1x.png);
   background-repeat: no-repeat;
   background-position: 0 766px;
-  width: 100%;
 }
 
 // Треба контейнер перекинути на спільний контейнер
