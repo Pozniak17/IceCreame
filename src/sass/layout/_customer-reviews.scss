@@ -40,7 +40,12 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 29px,
+    #c4c4c4c5 30.5px
+  );
 }
 
 .comment-text {
@@ -55,7 +60,7 @@
 }
 
 .slider__title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   font-weight: 500;
   font-size: 14px;
