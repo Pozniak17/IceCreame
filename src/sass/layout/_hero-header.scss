@@ -1,3 +1,11 @@
+.page-header {
+  padding-top: 6px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+
 .page-header--background {
   background-color: #ffb8ca;
 }
@@ -7,18 +15,12 @@
   align-items: center;
 }
 
-.navigation {
-  padding-top: 6px;
-  @media screen and (min-width: 768px) {
-    padding-top: 37px;
-  }
-}
-
 .page-header__logo {
   display: inline-block;
 }
 
 .mob-menu {
+  z-index: 2;
   padding: 0;
   margin-left: auto;
   width: 30px;
@@ -26,12 +28,48 @@
   cursor: pointer;
 }
 
+.button-buy {
+  z-index: 1;
+  display: none;
+  padding: 12px 41px;
+  margin-left: 30px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $main-accent;
+  border-style: unset;
+  background-color: #ffffff;
+  border-radius: 22px;
+  transition: background-color 250ms linear;
+
+  @media screen and (min-width: 768px) {
+    display: unset;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
 .hero {
   padding-top: 135px;
   padding-bottom: 160px;
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/tablet/number16-2x.png);
+  // }
+
   @media screen and (min-width: 768px) {
     padding-top: 15px;
     padding-bottom: 168px;
+    background-image: url(../images/tablet/number16-1x.png), url(../images/tablet/number23-1x.png);
+    background-repeat: no-repeat;
+    background-position: right 34px bottom 261px, right 34px bottom 205px;
   }
 }
 
@@ -43,9 +81,10 @@
   position: absolute;
   top: 83px;
   right: 0;
+
   @media screen and (min-width: 768px) {
     top: 31px;
-    right: 137px;
+    right: 140px;
   }
 }
 
@@ -53,6 +92,7 @@
   position: absolute;
   top: 92px;
   right: 32px;
+
   @media screen and (min-width: 768px) {
     top: 63px;
     right: 247px;
@@ -64,6 +104,18 @@
   position: absolute;
   top: 266px;
   right: 34px;
+
+  @media screen and (min-width: 768px) {
+    display: unset;
+  }
+}
+
+.wrap-milk {
+  display: none;
+  position: absolute;
+  top: 245px;
+  left: 34px;
+
   @media screen and (min-width: 768px) {
     display: unset;
   }
@@ -80,6 +132,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+
   @media screen and (min-width: 768px) {
     max-width: 162px;
     font-size: 22px;
@@ -90,6 +143,7 @@
     font-size: 48px;
     line-height: 0.96;
     color: $main-accent;
+
     @media screen and (min-width: 768px) {
       font-size: 34px;
       line-height: 0.91;
@@ -113,6 +167,7 @@
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
+  transition: background-color 250ms linear;
 
   &--pink {
     color: #ffffff;
