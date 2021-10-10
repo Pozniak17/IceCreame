@@ -160,6 +160,8 @@
   }
 }
 .contacts__location {
+  display: flex;
+  justify-content: baseline;
   padding: 12px 20px;
   background: $main-accent;
   border-radius: 22px;
@@ -167,6 +169,10 @@
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 15px;
@@ -176,8 +182,11 @@
 
 .icon-loc {
   fill: #fff;
+  margin-left: 10px;
 }
 .contacts__franchise {
+  display: flex;
+  justify-content: baseline;
   padding: 12px 32px;
   background: #fff;
   border-radius: 22px;
@@ -195,6 +204,7 @@
 }
 .icon-fr {
   fill: $main-accent;
+  margin-left: 10px;
 }
 .locations__backdrop,
 .franchise__backdrop {
