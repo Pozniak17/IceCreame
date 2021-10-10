@@ -1,7 +1,12 @@
+.about__container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .about {
   background-color: $third-accent;
   padding-top: 125px;
   padding-bottom: 39px;
+
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 66px;
@@ -52,6 +57,9 @@
   // Готово к этому моменту
 
   &__second-text {
+    display: block;
+    width: 220px;
+    height: 79px;
     color: $primary-color;
     font-family: DM Sans;
     font-weight: 500;
@@ -62,6 +70,8 @@
   }
 
   &__third-text {
+    width: 220px;
+    height: 150px;
     color: $text-color;
     font-family: DM Sans;
     font-style: normal;
@@ -88,11 +98,11 @@
   text-align: center;
 }
 
-.about__text-wrapper {
+.about {
   background-image: url(../images/mobile/about-bg-1x.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
+  background-position: 0 766px;
+  width: 100%;
 }
 
 // Треба контейнер перекинути на спільний контейнер
