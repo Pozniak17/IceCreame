@@ -115,6 +115,12 @@
   line-height: 1.29;
   align-items: center;
   text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .about {
