@@ -11,33 +11,47 @@
   border-radius: 50%;
 }
 
-.img1 {
-  background-color: aquamarine;
-}
-
-.img2 {
-  background-color: rgb(190, 158, 69);
-}
-
-.img3 {
-  background-color: rgb(121, 79, 189);
-}
-
 .comment {
+  position: relative;
+
   margin-bottom: 30px;
-  padding: 43px 50px 20px 50px;
+  padding: 43px 50px 15px 50px;
 
   background-color: #fafafa;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    z-index: 1;
+
+    display: block;
+
+    height: 40px;
+    width: 54px;
+
+    background-image: url('/images/desktop/customer-reviews-logo3.svg');
+  }
 }
 
 .comment-box {
-  padding-left: 7px;
+  padding-left: 16px;
   padding-right: 16px;
 
-  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 29px,
+    #c4c4c4c5 30.5px
+  );
 }
 
 .comment-text {
+  position: relative;
+  z-index: 2;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
@@ -46,7 +60,7 @@
 }
 
 .slider__title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   font-weight: 500;
   font-size: 14px;
@@ -59,8 +73,11 @@
 
     display: block;
 
+    height: 4px;
     margin-bottom: 18px;
 
-    // background-image: url("./images/desktop/customer-reviews-icon1-1x.png');
+    background-image: url('/images/desktop/customer-reviews-logo1.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
   }
 }
