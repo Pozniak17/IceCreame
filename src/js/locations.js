@@ -5,8 +5,8 @@
       locations: document.querySelector('[data-locations]'),
     };
   
-    refs.openLocationsBtn.addEventListener('click', toggleModal);
-    refs.closeLocationsBtn.addEventListener('click', toggleModal);
+    refs.openLocationsBtn.addEventListener('click', toggleLocations);
+    refs.closeLocationsBtn.addEventListener('click', toggleLocations);
   
     function toggleLocations() {
       refs.locations.classList.toggle('is-hidden');
