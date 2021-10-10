@@ -42,7 +42,19 @@
   display: inline-block;
   margin-bottom: 25px;
 }
-.contacts__place {
+
+.contacts__city {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  line-height: 1.86;
+  color: $primary-color;
+}
+.contacts__description {
+  display: inline-block;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 25px;
@@ -51,15 +63,8 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
-  &-city {
-    margin-bottom: 10px;
-    line-height: 1, 86;
-    color: $primary-color;
-  }
-  &-description {
-    color: $text-color;
-    line-height: 1.5;
-  }
+  color: $text-color;
+  line-height: 1.5;
 }
 
 .contacts__work-schedule {
@@ -69,7 +74,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
   border-bottom: 1px solid #e1e1e1;
 }
 .contacts__weekdays {
