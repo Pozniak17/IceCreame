@@ -1,0 +1,35 @@
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+.slick-dots li.slick-active button {
+  background-image: url('/images/desktop/customer-reviews-logo2.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border-radius: 0;
+
+  transition: background-color 0ms linear;
+}
+
+.slick-dots li button {
+  height: 100%;
+  width: 100%;
+
+  color: transparent;
+
+  border-radius: 50%;
+  border: transparent;
+  background-color: #d9d9d9;
+
+  transition: background-color 250ms linear;
+
+  &::before {
+    display: none;
+  }
+}
