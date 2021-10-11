@@ -73,10 +73,15 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 15px;
-    padding-bottom: 168px;
+    padding-bottom: 173px;
     background-image: url(../images/tablet/number16-1x.png), url(../images/tablet/number23-1x.png);
     background-repeat: no-repeat;
     background-position: right 34px bottom 261px, right 34px bottom 205px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 84px;
+    padding-bottom: 292px;
   }
 }
 
@@ -101,7 +106,7 @@
   right: 32px;
 
   @media screen and (min-width: 768px) {
-    top: 63px;
+    top: 68px;
     right: 247px;
   }
 }
@@ -109,7 +114,7 @@
 .wrap-girl {
   display: none;
   position: absolute;
-  top: 266px;
+  top: 271px;
   right: 34px;
 
   @media screen and (min-width: 768px) {
@@ -120,7 +125,7 @@
 .wrap-milk {
   display: none;
   position: absolute;
-  top: 245px;
+  top: 250px;
   left: 34px;
 
   @media screen and (min-width: 768px) {
@@ -130,7 +135,7 @@
 
 .wrap-milk__text {
   position: absolute;
-  top: 292px;
+  top: 297px;
   left: 154px;
   display: none;
   width: 114px;
@@ -146,7 +151,7 @@
 
 .button-slider {
   position: absolute;
-  top: 347px;
+  top: 352px;
   left: 154px;
   display: none;
   align-items: center;
