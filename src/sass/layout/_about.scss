@@ -1,3 +1,4 @@
+// Молоко
 .about {
   background-color: $third-accent;
   background-image: url(../images/mobile/about-bg-1x.png);
@@ -9,7 +10,6 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/mobile/about-bg-2x.png);
   }
-
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     padding-bottom: 66px;
@@ -60,7 +60,6 @@
       font-size: 58px;
     }
   }
-  // Готово к этому моменту
 
   &__second-text {
     color: $primary-color;
@@ -137,7 +136,6 @@
 .about__text-wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  align-items: center;
 
   background-image: url(../images/mobile/about1-1x.png);
   background-repeat: no-repeat;
