@@ -390,3 +390,15 @@
     }
   }
 }
+
+.home {
+  position: fixed;
+  bottom: 5px;
+  right: 35px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/scroll_up.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
