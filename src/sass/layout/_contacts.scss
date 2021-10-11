@@ -316,13 +316,14 @@
 .franchise__input {
   border: 1px solid $main-accent;
   border-radius: 24px;
-  padding: 11px 15px;
+  padding: 11px 45px;
   outline: none;
   margin-bottom: 10px;
   &::placeholder {
     color: $text-color;
     text-align: center;
   }
+  width: 207px;
 }
 .franchise__btn {
   border: 1px solid $main-accent;
