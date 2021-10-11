@@ -16,8 +16,10 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-header__logo {
@@ -25,14 +27,30 @@
 }
 
 .menu {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.menu__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
 
 .menu__link {
+  display: none;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    display: unset;
+  }
 }
 
 .mob-menu {
@@ -84,6 +102,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
   }
 }
 
