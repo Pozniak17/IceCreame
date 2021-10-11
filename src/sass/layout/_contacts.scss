@@ -224,6 +224,7 @@
   overflow-y: auto;
   width: 100hw;
   height: 100%;
+  max-height: 790px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -315,13 +316,14 @@
 .franchise__input {
   border: 1px solid $main-accent;
   border-radius: 24px;
-  padding: 11px 15px;
+  padding: 11px 45px;
   outline: none;
   margin-bottom: 10px;
   &::placeholder {
     color: $text-color;
     text-align: center;
   }
+  width: 207px;
 }
 .franchise__btn {
   border: 1px solid $main-accent;
@@ -338,4 +340,9 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+}
+.map {
+  @media screen and (max-width: 767px) {
+    width: 250px;
+  }
 }
