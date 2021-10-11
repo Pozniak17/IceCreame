@@ -15,8 +15,24 @@
   align-items: center;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .page-header__logo {
   display: inline-block;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }
 
 .mob-menu {
