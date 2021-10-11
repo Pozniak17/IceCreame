@@ -152,6 +152,14 @@
   @media screen and (min-width: 768px) {
     display: unset;
   }
+
+  @media screen and (min-width: 768px) {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 
 .button-slider {
@@ -182,6 +190,13 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 583px;
+    left: 295px;
+    width: 26px;
+    height: 26px;
   }
 }
 
