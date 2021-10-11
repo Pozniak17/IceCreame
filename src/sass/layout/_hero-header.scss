@@ -126,8 +126,11 @@
 }
 
 .wrap-number-small {
+  display: none;
+
   @media screen and (min-width: 768px) {
     position: absolute;
+    display: unset;
     top: 95px;
     right: 34px;
   }
@@ -140,8 +143,11 @@
 }
 
 .wrap-number-big {
+  display: none;
+
   @media screen and (min-width: 768px) {
     position: absolute;
+    display: unset;
     top: 151px;
     right: 34px;
   }
