@@ -4,7 +4,27 @@
     <h2 class="caption">products</h2>
     <ul class="products">
       <li class="products__list__ice">
-        <img src="#" alt="ice cream" width="249" height="252" />
+        <picture>
+          <source
+            srcset="./images/desktop/products1-1x.png 1x, ./images/desktop/products1-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/tablet/products1-1x.png 1x, ./images/desktop/products1-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/mobile/products1-1x.png 1x, ./images/desktop/products1-2x.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            class="products__img"
+            srs="./images/mobile/products1-1x.png"
+            alt="ice cream"
+            width="249"
+            height="252"
+          />
+        </picture>
 
         <div class="products__wrapper">
           <h2 class="products__title">ice cream</h2>
@@ -19,7 +39,27 @@
       </li>
 
       <li class="products__list__coffee">
-        <img src="#" alt="ice coffee" width="249" height="252" />
+        <picture>
+          <source
+            srcset="./images/desktop/products2-1x.png 1x, ./images/desktop/products2-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/tablet/products2-1x.png 1x, ./images/desktop/products2-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/mobile/products2-1x.png 1x, ./images/desktop/products2-2x.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            class="products__img"
+            srs="./images/mobile/products2-1x.png"
+            alt="ice coffee"
+            width="249"
+            height="252"
+          />
+        </picture>
 
         <div class="products__wrapper">
           <h2 class="products__title">ice coffee</h2>
@@ -33,7 +73,27 @@
         </div>
       </li>
       <li class="products__list__milkshakes">
-        <img src="#" alt="milkshakes" width="249" height="252" />
+        <picture>
+          <source
+            srcset="./images/desktop/products3-1x.png 1x, ./images/desktop/products3-2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/tablet/products3-1x.png 1x, ./images/desktop/products3-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/mobile/products3-1x.png 1x, ./images/desktop/products3-2x.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            class="products__img"
+            srs="./images/mobile/products3-1x.png"
+            alt="milkshakes"
+            width="249"
+            height="252"
+          />
+        </picture>
 
         <div class="products__wrapper">
           <h2 class="products__title">milkshakes</h2>
@@ -41,9 +101,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <svg class="icon" width="40" height="40">
-            <use></use>
-          </svg>
+          <button class="products__button" type="button">
+            <svg class="icon" width="40" height="40">
+              <use></use>
+            </svg>
+          </button>
         </div>
       </li>
     </ul>

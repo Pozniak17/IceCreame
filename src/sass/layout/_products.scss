@@ -2,6 +2,14 @@
   padding-top: 121px;
   padding-bottom: 98px;
   background: #e5e5e5;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 .subtitle {
   font-family: Titan One;
@@ -10,6 +18,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-accent;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 .caption {
   font-family: Titan One;
@@ -20,12 +36,48 @@
   text-transform: uppercase;
   color: $main-accent;
   margin-top: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
 .products {
+  margin-top: 144px;
+  @media screen and (min-width: 768px) {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 259px;
+  }
   &__list {
-    height: 485px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+    padding: 161px 40px 41px;
+
     border-radius: 24px;
+    margin-bottom: 130px;
+    @media screen and (min-width: 768px) {
+      width: 215px;
+      padding: 161px 11px 40px;
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 325px;
+      padding: 163px 44px 50px;
+      margin-bottom: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
     &__ice {
       background: $secondary-accent;
       border-radius: 24px;
@@ -51,6 +103,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &::after {
+      content: '...';
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
   &__text {
     font-family: DM Sans;
@@ -61,6 +124,17 @@
     justify-content: center;
     letter-spacing: 0.04em;
     color: #ffffff;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 176%;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 176%;
+    }
+  }
+  &__img {
+    position: absolute;
   }
   &__icon {
     margin-top: 30px;
