@@ -5,8 +5,8 @@
     franchise: document.querySelector('[data-franchise]'),
   };
 
-  refs.openFranchiseBtn.addEventListener('click', toggleMenu);
-  refs.closeFranchiseBtn.addEventListener('click', toggleMenu);
+  refs.openFranchiseBtn.addEventListener('click', toggleFranchise);
+  refs.closeFranchiseBtn.addEventListener('click', toggleFranchise);
 
   function toggleFranchise() {
     refs.franchise.classList.toggle('is-hidden');
