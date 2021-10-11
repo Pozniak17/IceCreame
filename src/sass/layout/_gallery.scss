@@ -10,13 +10,16 @@
   clip: rect(0 0 0 0);
 }
 
-.gallery_container{
-  background-image:linear-gradient(var($secondary-accent 50%),
-  var($third-accent 50%));
+// .gallery_container{
+//   background-image:linear-gradient(var($secondary-accent 50%),
+//   var($third-accent 50%));
 
-}
+// }
  .gallery__section{
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  background-image:linear-gradient(var($secondary-accent 50%),
+  var($third-accent 50%));
+
 }
