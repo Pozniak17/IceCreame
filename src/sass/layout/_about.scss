@@ -2,7 +2,7 @@
   background-color: $third-accent;
   background-image: url(../images/mobile/about-bg-1x.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: 50%;
   padding-top: 125px;
   padding-bottom: 39px;
@@ -18,7 +18,10 @@
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
     padding-bottom: 146px;
-    // background-image: url(../images/desctop/about-bg-1x.png);
+    background-image: url(../images/desktop/about-bg-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/about-bg-2x.png);
+    }
   }
   &__text {
     color: $secondary-accent;
