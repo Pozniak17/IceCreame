@@ -81,7 +81,7 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 84px;
-    padding-bottom: 292px;
+    padding-bottom: 282px;
   }
 }
 
@@ -109,6 +109,11 @@
     top: 68px;
     right: 247px;
   }
+
+  @media screen and (min-width: 1280px) {
+    top: 108px;
+    right: 450px;
+  }
 }
 
 .wrap-girl {
@@ -119,6 +124,11 @@
 
   @media screen and (min-width: 768px) {
     display: unset;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 433px;
+    right: 109px;
   }
 }
 
