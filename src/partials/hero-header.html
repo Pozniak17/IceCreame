@@ -1,0 +1,95 @@
+<header class="page-header page-header--background">
+  <div class="container container--flex">
+    <nav class="navigation">
+      <a class="page-header__logo" href="#">
+        <img
+          srcset="./images/mobile/logo-1x.png 1x, ./images/mobile/logo-2x.png 2x"
+          src="./images/mobile/logo-1x.png"
+          alt="Логотип"
+        />
+      </a>
+    </nav>
+    <button class="mob-menu" type="button">
+      <svg class="mob-menu__icon" width="20" height="12">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <button class="button-buy" type="button">
+      Buy now
+      <svg class="button-buy__icon" width="10" height="10">
+        <use href="./images/sprite.svg#icon-arrow-buy"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<!-- Секция Герой -->
+<section class="hero hero--background">
+  <div class="container">
+    <picture>
+      <source
+        srcset="./images/tablet/Ellipse-1x.png 1x, ./images/tablet/Ellipse-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/Ellipse-1x.png 1x, ./images/mobile/Ellipse-2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img class="wrap-ellipse" src="./images/mobile/Ellipse-1x.png" alt="Мороженое" />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/desktop/ice-cream-1x.png 1x, ./images/desktop/ice-cream-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/ice-cream-1x.png 1x, ./images/tablet/ice-cream-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/mobile/ice-cream-1x.png 1x, ./images/mobile/ice-cream-2x.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img class="wrap-ice" src="./images/mobile/ice-cream-1x.png" alt="Мороженое" />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/desktop/girl-1x.png 1x, ./images/desktop/girl-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/girl-1x-min.png 1x, ./images/tablet/girl-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img class="wrap-girl" src="./images/tablet/girl-1x-min.png" alt="Девушка ест мороженое" />
+    </picture>
+    <picture>
+      <source
+        srcset="./images/desktop/milk-1x.png 1x, ./images/desktop/milk-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/milk-1x.png 1x, ./images/tablet/milk-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img class="wrap-milk" src="./images/tablet/milk-1x.png" alt="Молоко в кувшине" />
+    </picture>
+    <p class="wrap-milk__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <button class="button-slider" type="button">
+      <svg class="button-slider__icon" width="8" height="7">
+        <use href="./images/sprite.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+    <h1 class="hero__title">ice cream made with <span class="hero__title--size">passion</span></h1>
+    <ul class="button">
+      <li class="button__item">
+        <a class="button__link button__link--pink" href="#products">Products</a>
+      </li>
+      <li class="button__item">
+        <a class="button__link button__link--white" href="#about">How it’s made?</a>
+      </li>
+    </ul>
+  </div>
+</section>
