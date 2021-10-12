@@ -43,6 +43,7 @@
     text-transform: uppercase;
     color: $main-accent;
     margin-top: 15px;
+    margin-bottom: 49px;
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.15;
@@ -90,6 +91,7 @@
     }
 
     &-title {
+      padding-top: 161px;
       margin-bottom: 30px;
       font-family: Titan One;
       font-weight: 400;
@@ -129,27 +131,6 @@
         font-size: 16px;
         line-height: 1.76;
       }
-    }
-  }
-
-  &-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0;
-    width: 249px;
-    transform: translate(-50%);
-    @media screen and (min-width: 768px) {
-      top: 0;
-      left: 50%;
-      width: 220px;
-      transform: translate(-50%);
-    }
-    @media screen and (min-width: 1280px) {
-      top: 0;
-      left: 50%;
-      width: 335px;
-      transform: translate(-50%);
     }
   }
 
@@ -199,18 +180,118 @@
     padding: 0;
   }
 }
-// .list-link::before {
-//   margin-top: 16px;
-//   background-image: url(./images/desktop/about-bg-1x.png);
-// }
-.ice {
-  background-color: #ffb8ca;
-}
 
+.ice {
+  margin-top: 100px;
+  background-color: #ffb8ca;
+  &::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    top: -120px;
+    left: 20px;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/mobile/products1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/products1-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      top: -100px;
+      left: 3px;
+      width: 228px;
+      height: 226px;
+      background-image: url(../images/tablet/products1-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products1-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      top: -200px;
+      left: 0;
+      width: 335px;
+      height: 335px;
+      background-image: url(../images/desktop/products1-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products1-2x.png);
+      }
+    }
+  }
+}
 .coffee {
+  margin-top: 100px;
   background-color: #f0d1a5;
+  &::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+
+    top: -120px;
+    left: 20px;
+    width: 249px;
+    height: 252px;
+    background-image: url(../images/mobile/products2-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/products2-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      top: -100px;
+      left: 3px;
+      width: 220px;
+      height: 233px;
+      background-image: url(../images/tablet/products2-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products2-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      top: -200px;
+      left: 0px;
+      width: 337px;
+      height: 335px;
+      background-image: url(../images/desktop/products2-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products2-2x.png);
+      }
+    }
+  }
 }
 
 .milkshakes {
+  margin-top: 100px;
   background-color: #c2e297;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 20px;
+    width: 249px;
+    height: 252px;
+    background-size: contain;
+    background-image: url(../images/mobile/products3-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/products3-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      top: -100px;
+      left: 3px;
+      width: 220px;
+      height: 224px;
+      background-size: contain;
+      background-image: url(../images/tablet/products3-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/products3-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      top: -200px;
+      left: 0px;
+      width: 335px;
+      height: 335px;
+      background-image: url(../images/desktop/products3-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/products3-2x.png);
+      }
+    }
+  }
 }
