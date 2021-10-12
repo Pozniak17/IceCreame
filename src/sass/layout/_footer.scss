@@ -19,12 +19,11 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+
     margin-bottom: 91px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 97px;
-    align-items: flex-start;
   }
 }
 
@@ -50,6 +49,7 @@ footer {
     line-height: calc(30 / 26);
     letter-spacing: 0.04em;
     width: 340px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
