@@ -1,19 +1,24 @@
 .mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
   background-color: #e17992;
   width: 250px;
   height: 100vh;
-  padding: 60px 21px;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+  padding: 24px 24px;
+  z-index: 1;
 }
 .mobile-menu__button {
-  display: flex;
+  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  text-align: center;
 
   min-width: 209px;
   height: 44px;
@@ -23,6 +28,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31px;
+  margin-bottom: 32px;
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -47,8 +53,22 @@
     color: #d41443;
   }
 }
+
 /*.mobile-menu__item {
   &:not(:last-child) {
     margin-bottom: 23px;
   }
 }*/
+// Кнопка закрытия
+.mobile-menu__button-close {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 23px;
+}
+
+.mobile-menu__icon {
+  margin-left: 8px;
+  fill: #d41443;
+}
