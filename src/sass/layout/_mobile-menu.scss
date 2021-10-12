@@ -10,6 +10,9 @@
   height: 100vh;
   padding: 24px 24px;
   z-index: 1;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .mobile-menu__button {
   justify-content: center;
@@ -37,28 +40,24 @@
 .mobile-menu__link {
   color: #ffffff;
   padding: 12px 0 12px 0;
-  &::after,
-  &::before {
-    content: ' ';
-    border: 1px solid #e18298;
-  }
 
   font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.83;
+
   &:hover,
   &:focus {
     color: #d41443;
   }
 }
 
-/*.mobile-menu__item {
+.mobile-menu__item {
   &:not(:last-child) {
     margin-bottom: 23px;
   }
-}*/
+}
+
 // Кнопка закрытия
 .mobile-menu__button-close {
   background-color: inherit;
