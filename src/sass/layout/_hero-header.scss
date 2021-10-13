@@ -126,6 +126,10 @@
   }
 }
 
+.container--absolute {
+  position: relative;
+}
+
 .hero {
   padding-top: 135px;
   padding-bottom: 160px;
@@ -147,32 +151,32 @@
 
 .wrap-ellipse {
   position: absolute;
-  top: 83px;
+  top: -110px;
   right: 0;
 
   @media screen and (min-width: 768px) {
-    top: 31px;
+    top: -73px;
     right: 142px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 52px;
+    top: -120px;
     right: 267px;
   }
 }
 
 .wrap-ice {
   position: absolute;
-  top: 92px;
+  top: -101px;
   right: 32px;
 
   @media screen and (min-width: 768px) {
-    top: 68px;
+    top: -37px;
     right: 247px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 108px;
+    top: -63px;
     right: 450px;
   }
 }
@@ -183,13 +187,13 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     display: unset;
-    top: 95px;
+    top: -5px;
     right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
     position: absolute;
-    top: 156px;
+    top: -15px;
     right: 97px;
   }
 }
@@ -200,13 +204,13 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     display: unset;
-    top: 151px;
+    top: 53px;
     right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
     position: absolute;
-    top: 248px;
+    top: 80px;
     right: 97px;
   }
 }
@@ -214,7 +218,7 @@
 .wrap-girl {
   display: none;
   position: absolute;
-  top: 271px;
+  top: 166px;
   right: 34px;
 
   @media screen and (min-width: 768px) {
@@ -222,7 +226,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 433px;
+    top: 262px;
     right: 109px;
   }
 }
@@ -230,7 +234,7 @@
 .wrap-milk {
   display: none;
   position: absolute;
-  top: 250px;
+  top: 145px;
   left: 34px;
 
   @media screen and (min-width: 768px) {
@@ -238,14 +242,14 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 429px;
+    top: 255px;
     left: 77px;
   }
 }
 
 .wrap-milk__text {
   position: absolute;
-  top: 297px;
+  top: 190px;
   left: 154px;
   display: none;
   width: 114px;
@@ -259,7 +263,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 485px;
+    top: 310px;
     left: 295px;
     width: 200px;
     font-size: 14px;
@@ -269,7 +273,7 @@
 
 .button-slider {
   position: absolute;
-  top: 352px;
+  top: 245px;
   left: 154px;
   display: none;
   align-items: center;
@@ -298,7 +302,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 583px;
+    top: 410px;
     left: 295px;
     width: 26px;
     height: 26px;
