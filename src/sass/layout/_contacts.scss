@@ -35,8 +35,17 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 20px;
+
+  transition: transform 250ms linear;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+
     &:not(:last-child) {
       margin-right: 20px;
     }
