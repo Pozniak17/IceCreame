@@ -79,6 +79,13 @@
       width: 220px;
       padding: 0 11px 40px;
       margin-bottom: 0px;
+
+      transition: transform 250ms linear;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.03);
+      }
     }
     @media screen and (min-width: 1280px) {
       width: 335px;
