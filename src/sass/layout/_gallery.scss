@@ -29,4 +29,11 @@
 
 .gallery__images {
   margin: 0 auto;
+
+  transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.03);
+  }
 }
