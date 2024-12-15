@@ -19,6 +19,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.2",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
@@ -26,6 +27,7 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "parcel": "^2.13.2"
   }
 }

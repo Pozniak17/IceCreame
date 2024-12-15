@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
-    <link rel="shortcut icon" href="./images/Cream.ico" type="image/x-icon" />
-    <!-- Нормалайз -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Шрифты DM Sans(400,500,700), Titan One(400) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IceCream</title>
+  <link rel="shortcut icon" href="./images/Cream.ico" type="image/x-icon" />
+  <!-- Нормалайз -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Шрифты DM Sans(400,500,700), Titan One(400) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Структура проекта -->
-    <!-- Секция Hero header #1 -->
-    <include src="./partials/hero-header.html"></include>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <main>
-      <!-- Секция Products #2 -->
-      <include src="./partials/products.html"></include>
-      <!-- Секция About #3 -->
-      <include src="./partials/about.html"></include>
-      <!-- Секция Advantages #4 -->
-      <include src="./partials/advantages.html"></include>
-      <!-- Секция Gallery #5 -->
-      <include src="./partials/gallery.html"></include>
-      <!-- Секция Customer Reviews #6 -->
-      <include src="./partials/customer-reviews.html"></include>
-      <!-- Секция Contacts #7 -->
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <!-- Секция Footer #8 -->
-    <include src="./partials/footer.html"></include>
-    <!-- Секция Mobile menu #9 -->
+<body>
+  <!-- Структура проекта -->
+  <!-- Секция Hero header #1 -->
+  <include src="./partials/hero-header.html"></include>
 
-    <!-- Секция Modal-window #10 -->
-    <include src="./partials/modal-window.html"></include>
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/locations.js"></script>
-    <script src="./js/franchise.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+  <main>
+    <!-- Секция Products #2 -->
+    <include src="./partials/products.html"></include>
+    <!-- Секция About #3 -->
+    <include src="./partials/about.html"></include>
+    <!-- Секция Advantages #4 -->
+    <include src="./partials/advantages.html"></include>
+    <!-- Секция Gallery #5 -->
+    <include src="./partials/gallery.html"></include>
+    <!-- Секция Customer Reviews #6 -->
+    <include src="./partials/customer-reviews.html"></include>
+    <!-- Секция Contacts #7 -->
+    <include src="./partials/contacts.html"></include>
+  </main>
+  <!-- Секция Footer #8 -->
+  <include src="./partials/footer.html"></include>
+  <!-- Секция Mobile menu #9 -->
+
+  <!-- Секция Modal-window #10 -->
+  <include src="./partials/modal-window.html"></include>
+  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+  <script type="module" src="./index.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/locations.js"></script>
+  <script src="./js/franchise.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>
