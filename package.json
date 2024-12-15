@@ -2,7 +2,6 @@
   "name": "IceCreame",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
   "homepage": "https://Pozniak17.github.io/IceCreame/",
   "scripts": {
     "dev": "parcel src/*.html",
