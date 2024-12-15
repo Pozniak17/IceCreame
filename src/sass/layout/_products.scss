@@ -1,3 +1,5 @@
+@use '../utility/variables';
+
 .products {
   text-align: center;
 
@@ -21,7 +23,7 @@
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
-    color: $secondary-accent;
+    color: variables.$secondary-accent;
 
     @media screen and (min-width: 768px) {
       font-size: 26px;
@@ -41,7 +43,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $main-accent;
+    color: variables.$main-accent;
     margin-top: 15px;
     margin-bottom: 49px;
     @media screen and (min-width: 768px) {
@@ -160,13 +162,13 @@
 
     &:hover {
       transition: background-color 300ms linear;
-      background-color: $main-accent;
+      background-color: variables.$main-accent;
       cursor: pointer;
     }
 
     &:focus {
       transition: background-color 300ms linear;
-      background-color: $main-accent;
+      background-color: variables.$main-accent;
       cursor: pointer;
     }
 
@@ -182,7 +184,7 @@
   }
 
   &-icon {
-    fill: $main-accent;
+    fill: variables.$main-accent;
     margin: 0;
     padding: 0;
   }

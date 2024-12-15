@@ -3,18 +3,18 @@
  * Все паршалы подключаются сюда.
  */
 
-@import './utility/variables';
-@import './utility/reset';
-@import './utility/hidden';
-@import './components/container';
-@import './layout/hero-header';
-@import './layout/products';
-@import './layout/about';
-@import './layout/advantages';
-@import './layout/gallery';
-@import './layout/customer-reviews';
-@import './layout/contacts';
-@import './layout/footer';
-@import './layout/mobile-menu';
-@import './layout/slider';
-@import './layout/_modal-window';
+@use './utility/variables';
+@use './utility/reset';
+@use './utility/hidden';
+@use './components/container';
+@use './layout/hero-header';
+@use './layout/products';
+@use './layout/about';
+@use './layout/advantages';
+@use './layout/gallery';
+@use './layout/customer-reviews';
+@use './layout/contacts';
+@use './layout/footer';
+@use './layout/mobile-menu';
+@use './layout/slider';
+@use './layout/_modal-window';

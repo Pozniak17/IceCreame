@@ -1,18 +1,20 @@
+@use '../utility/variables';
+
 .contacts {
   padding: 30px 0;
-  background: linear-gradient(to bottom, #fff 8.5%, $third-accent 8.5%, $third-accent 100%);
+  background: linear-gradient(to bottom, #fff 8.5%, variables.$third-accent 8.5%, variables.$third-accent 100%);
 
   @media screen and (min-width: 768px) {
-    background: linear-gradient(to bottom, #fff 15%, $third-accent 15%, $third-accent 100%);
+    background: linear-gradient(to bottom, #fff 15%, variables.$third-accent 15%, variables.$third-accent 100%);
   }
   @media screen and (min-width: 1280px) {
     background: url(../images/desktop/contact-bg-1x.png) no-repeat 0 30%,
-      linear-gradient(to bottom, #fff 17%, $third-accent 17%, $third-accent 100%);
+      linear-gradient(to bottom, #fff 17%, variables.$third-accent 17%, variables.$third-accent 100%);
     background-size: contain;
   }
   @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
     background-image: url(../images/desktop/contact-bg-2x.png) no-repeat 0 30%,
-      linear-gradient(to bottom, #fff 17%, $third-accent 17%, $third-accent 100%);
+      linear-gradient(to bottom, #fff 17%, variables.$third-accent 17%, variables.$third-accent 100%);
     background-size: contain;
   }
 }
@@ -82,7 +84,7 @@
   letter-spacing: 0.04em;
   margin-bottom: 10px;
   line-height: 1.86;
-  color: $primary-color;
+  color: variables.$primary-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -100,7 +102,7 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.04em;
-  color: $text-color;
+  color: variables.$text-color;
   line-height: 1.5;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -132,10 +134,10 @@
   margin-bottom: 10px;
 }
 .contacts__work-day {
-  color: $primary-color;
+  color: variables.$primary-color;
 }
 .contacts__work-time {
-  color: $secondary-accent;
+  color: variables.$secondary-accent;
 }
 .contacts__tel,
 .contacts__mail {
@@ -199,7 +201,7 @@
   padding: 12px 32px;
   background: #fff;
   border-radius: 22px;
-  color: $main-accent;
+  color: variables.$main-accent;
   border: none;
   cursor: pointer;
 
@@ -212,7 +214,7 @@
   }
 }
 .icon-fr {
-  fill: $main-accent;
+  fill: variables.$main-accent;
   margin-left: 10px;
 }
 .locations__backdrop,
@@ -323,23 +325,23 @@
   pointer-events: none;
 }
 .franchise__input {
-  border: 1px solid $main-accent;
+  border: 1px solid variables.$main-accent;
   border-radius: 24px;
   padding: 11px 45px;
   outline: none;
   margin-bottom: 10px;
   &::placeholder {
-    color: $text-color;
+    color: variables.$text-color;
     text-align: center;
   }
   width: 207px;
 }
 .franchise__btn {
-  border: 1px solid $main-accent;
+  border: 1px solid variables.$main-accent;
   border-radius: 24px;
   padding: 11px 12px;
   outline: none;
-  background-color: $main-accent;
+  background-color: variables.$main-accent;
   color: #fff;
   cursor: pointer;
 }

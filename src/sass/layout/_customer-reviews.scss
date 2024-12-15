@@ -1,3 +1,5 @@
+@use '../utility/variables';
+
 .section-customer-reviews {
   padding-top: 40px;
   padding-bottom: 43px;
@@ -94,7 +96,7 @@
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
-  color: $primary-color;
+  color: variables.$primary-color;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;

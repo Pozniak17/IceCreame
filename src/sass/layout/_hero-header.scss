@@ -1,3 +1,5 @@
+@use '../utility/variables';
+
 .page-header {
   padding-top: 6px;
 
@@ -58,11 +60,11 @@
 
   &:hover,
   &:focus {
-    color: $main-accent;
+    color: variables.$main-accent;
   }
 
   &--current {
-    color: $main-accent;
+    color: variables.$main-accent;
   }
 
   @media screen and (min-width: 1280px) {
@@ -76,7 +78,7 @@
   margin-left: auto;
   width: 30px;
   height: 30px;
-  color: $main-accent;
+  color: variables.$main-accent;
   background-color: transparent;
   border-style: unset;
   cursor: pointer;
@@ -101,7 +103,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: $main-accent;
+  color: variables.$main-accent;
   border-style: unset;
   background-color: #ffffff;
   border-radius: 22px;
@@ -282,7 +284,7 @@
   width: 18px;
   height: 18px;
   padding: 0;
-  color: $main-accent;
+  color: variables.$main-accent;
   border-style: unset;
   background-color: #ffffff;
   border-radius: 50%;
@@ -338,7 +340,7 @@
   &--size {
     font-size: 48px;
     line-height: 0.96;
-    color: $main-accent;
+    color: variables.$main-accent;
 
     @media screen and (min-width: 768px) {
       font-size: 34px;
@@ -377,7 +379,7 @@
 
   &--pink {
     color: #ffffff;
-    background-color: $main-accent;
+    background-color: variables.$main-accent;
 
     &:hover,
     &:focus {
@@ -386,7 +388,7 @@
   }
 
   &--white {
-    color: $main-accent;
+    color: variables.$main-accent;
     background-color: #ffffff;
 
     &:hover,
